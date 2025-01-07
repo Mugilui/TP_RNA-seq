@@ -55,7 +55,7 @@ female_all_human_orthologs <- homologene::homologene(female_tested_genes,
 print("Female analysis:")
 print(paste("Number of female genes with human orthologs:", nrow(female_all_human_orthologs)))
 
-# This becomes our female background set
+# Female background set
 female_background_genes <- nrow(female_all_human_orthologs)
 
 # Get human orthologs for female DEGs
@@ -150,7 +150,7 @@ male_all_human_orthologs <- homologene::homologene(male_tested_genes,
 print("\nMale analysis:")
 print(paste("Number of male genes with human orthologs:", nrow(male_all_human_orthologs)))
 
-# This becomes our male background set
+# Male background set
 male_background_genes <- nrow(male_all_human_orthologs)
 
 # Get human orthologs for male DEGs
